@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data e Hora</title>
+    <script>
+        function mostrarDataHora() {
+            var dataHora = new Date();
+            document.getElementById("dataHoraAtual").innerHTML = dataHora;
+        }
+    </script>
+</head>
+<body>
+    <h2>Data e Hora Atuais</h2>
+    <p id="dataHoraAtual">Clique no botão para ver a data e a hora.</p>
+    <button onclick="mostrarDataHora()">Mostrar Data e Hora</button>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar/Ocultar</title>
+    <script>
+        function mostrarOcultar() {
+            var elemento = document.getElementById("textoEscondido");
+            if (elemento.style.display === "none") {
+                elemento.style.display = "block";
+            } else {
+                elemento.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="mostrarOcultar()">Mostrar/Ocultar Texto</button>
+    <p id="textoEscondido" style="display:none;">Este texto estava oculto.</p>
+</body>
+</html>

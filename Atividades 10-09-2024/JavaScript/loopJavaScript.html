@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop com JavaScript</title>
+    <script>
+        function criarLista() {
+            var itens = ["Item 1", "Item 2", "Item 3"];
+            var lista = "<ul>";
+            for (var i = 0; i < itens.length; i++) {
+                lista += "<li>" + itens[i] + "</li>";
+            }
+            lista += "</ul>";
+            document.getElementById("minhaLista").innerHTML = lista;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="criarLista()">Criar Lista</button>
+    <div id="minhaLista"></div>
+</body>
+</html>
