@@ -1,0 +1,37 @@
+<!DOCTYPE  html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Perfil do Usuário</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <header>
+            <h1>Bem-Vindo ao Perfil de Usuário</h1>
+        </header>
+
+        <section>
+            <p>Insira suas informações:</p>
+            <form id="formPerfil">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+
+                <label for="bio">Biografia:</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Escreva algo sobre você"></textarea>
+
+                <button type="button" onclick="mostrarPerfil()">Enviar</button>
+            </form>
+        </section>
+
+        <div id="perfilResultado"></div>
+
+        <script src="script.js"></script>
+
+        <footer>
+            Página Aula Desenvolvimento Web
+        </footer>
+    </body>
+</html>
